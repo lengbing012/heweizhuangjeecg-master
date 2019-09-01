@@ -49,9 +49,9 @@
           <div class="center">
             <h1 id="id-text2" class="grey">
               <i class="ace-icon fa fa-leaf green"></i>
-               JEECG 演示系统
+               	冷冰科技
             </h1>
-            <h4 class="blue" id="id-company-text">www.jeecg.com</h4>
+            <h4 class="blue" id="id-company-text">www.heweizhuang.com</h4>
           </div>
           <div class="space-6"></div>
           <div class="position-relative">
