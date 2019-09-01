@@ -117,7 +117,7 @@
                 </form>
               </div>
             </div>
-            <div class="center"><h4 class="blue" id="id-company-text">&copy; JEECG版权所有 v_4.0</h4></div>
+            <div class="center"><h4 class="blue" id="id-company-text">&copy; 冷冰科技 版权所有 v_1.0</h4></div>
             <div class="navbar-fixed-top align-right">
               <br />
               &nbsp;
