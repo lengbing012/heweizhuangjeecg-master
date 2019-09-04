@@ -1,0 +1,56 @@
+
+Maven修改知识
+
+1、学习参考：maven实战（许晓斌）
+
+2、maven中依赖的查询网址：https://mvnrepository.com/
+
+3、maven默认的远程仓库位置：
+	D:\JavaEErj\Maven\apache-maven-3.2.5\lib\maven-model-builder-3.2.5.jar 文件下，
+	将该文件解压，找到org\apache\maven\model\pom-4.0.0.xml 文件：
+		<?xml version="1.0" encoding="UTF-8"?>
+		<project>
+			<modelVersion>4.0.0</modelVersion>
+
+			<repositories>
+			    <repository>
+					<id>central</id>
+					<name>Central Repository</name>
+					<url>https://repo.maven.apache.org/maven2</url>
+					<layout>default</layout>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+			.......
+
+4、当默认的远程仓库无法访问时，可以在当前项目下的pom.xml文件下配置当前的仓库：
+	<repository>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>https://nexus.sourcesense.com/xexus/content/repositories/public/</url>
+      <layout>default</layout>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+
+
+5、生命周期：
+	compile：指的是编译范围有效，在编译和打包时都会将依赖存储进去
+	provided:在编译和测试的过程有效，最后生成war包时不会加入，比如：servlet-api，因为servlet-api，tomcat等服务器已经存在了，如果再打包，就会冲突
+	test:测试范围有效，在编译和打包时都不会使用这个依赖
+	runtime:在运行的时候依赖，在编译的时候不依赖
+	system:
+	import:
+
+
+
+
+
+
+
+
+
+
