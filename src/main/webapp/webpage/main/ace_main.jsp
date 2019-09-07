@@ -66,7 +66,7 @@
 					<a href="#" class="navbar-brand">
 						<small>
 							<i class="icon-leaf"></i>
-							JEECG 微云快速开发平台
+							冷冰科技——云开发测试平台
 						</small>
 					</a><!-- /.brand -->
 				</div><!-- /.navbar-header -->
